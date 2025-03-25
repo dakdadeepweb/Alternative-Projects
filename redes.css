@@ -1,0 +1,139 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #6200ea;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;  /* Isso vai alinhar o logo à esquerda e a navbar à direita */
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Estilos da barra de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end; /* Garante que os itens da navegação fiquem alinhados à direita */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px; /* Aumentei um pouco o espaçamento entre os itens */
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500; /* Um pouco de negrito para melhorar a legibilidade */
+    padding: 10px 15px; /* Adiciona um pequeno preenchimento ao redor do texto */
+    border-radius: 5px; /* Bordas arredondadas para um visual mais suave */
+    transition: all 0.3s ease; /* Transição suave para hover */
+}
+
+nav ul li a:hover {
+    color: #ffcc00; /* Cor amarela para o texto ao passar o mouse */
+    background-color: rgba(255, 204, 0, 0.2); /* Um fundo suave quando o hover acontecer */
+    border-radius: 8px; /* Um pouco mais de arredondamento nas bordas no hover */
+}
+
+/* Efeito de animação */
+nav ul li a:focus {
+    outline: none; /* Remove a borda azul padrão no foco */
+    box-shadow: 0 0 0 3px rgba(255, 204, 0, 0.5); /* Adiciona um contorno amarelo suave no foco */
+}
+
+
+/* Estilos para o conteúdo da página */
+.container {
+    max-width: 900px;
+    padding: 30px;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    margin: 20px;
+    text-align: center;
+    margin-top: 80px; /* Deixe espaço para o cabeçalho fixo */
+}
+
+h1 {
+    font-size: 2.8rem;
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 40px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.social-link img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.social-link:hover {
+    background-color: #6200ea;
+}
+
+footer {
+    margin-top: 40px;
+    color: #888;
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-style: italic;
+}
